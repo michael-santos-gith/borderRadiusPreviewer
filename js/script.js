@@ -3,27 +3,31 @@ let leftUpSide = document.getElementById("left-up-side");
 let rightUpSide = document.getElementById("right-up-side");
 let rightDownSide = document.getElementById("right-down-side");
 let leftDownSide = document.getElementById("left-down-side");
-
-let buttonLeftUpSide = document.querySelector("#button-left-up-side");
-buttonLeftUpSide.addEventListener('click', function() {
+// Aplica o border-radius 
+leftUpSide.addEventListener('input', function() {
     contentBeModificate.style.borderTopLeftRadius = leftUpSide.value + 'px';
-    leftUpSide.value = '';
 })
 
-let buttonRightUpSide = document.querySelector("#button-right-up-side");
-buttonRightUpSide.addEventListener('click', function() {
+rightUpSide.addEventListener('input', function() {
     contentBeModificate.style.borderTopRightRadius = rightUpSide.value + 'px';
-    rightUpSide.value = '';
 })
 
-let buttonRightDownSide = document.querySelector("#button-right-down-side");
-buttonRightDownSide.addEventListener('click', function() {
+rightDownSide.addEventListener('input', function() {
     contentBeModificate.style.borderBottomRightRadius = rightDownSide.value + 'px';
-    rightDownSide.value = '';
 })
 
-let buttonLeftDownSide = document.querySelector("#button-left-down-side");
-buttonLeftDownSide.addEventListener('click', function() {
+leftDownSide.addEventListener('input', function() {
     contentBeModificate.style.borderBottomLeftRadius = leftDownSide.value + 'px';
+})
+
+let resetAll = document.querySelector('#reset-all');
+resetAll.addEventListener('click', function() {
+    leftUpSide.value = '';
+    rightUpSide.value = '';
+    rightDownSide.value = '';
     leftDownSide.value = '';
+    contentBeModificate.style.borderTopLeftRadius = leftUpSide.value = 0 + 'px';
+    contentBeModificate.style.borderTopRightRadius = rightUpSide.value = 0 + 'px';
+    contentBeModificate.style.borderBottomRightRadius = rightDownSide.value = 0 + 'px';
+    contentBeModificate.style.borderBottomLeftRadius = leftDownSide.value = 0 + 'px';
 })
