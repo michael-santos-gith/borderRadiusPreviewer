@@ -1,3 +1,11 @@
+:root {
+    --cor-01: #0DA64F;
+    --cor-02: #04BF45;
+    --cor-03: #F27405;
+    --cor-04: #D2D6D9;
+    --cor-05: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +16,16 @@ body {
     height: 100vh;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
+    background-color: var(--cor-04);
 }
 
 textarea {
+    width: 70%;
+    padding: 5px;
     resize: none;
+    font-size: 0.7em;
+    border: none;
+    border-radius: 5px;
 }
 
 #container {
@@ -23,17 +37,52 @@ textarea {
 }
 
 #container h1 {
-    font-size: 1.3em;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    text-transform: uppercase;
 }
 
 #content-modify {
     width: 200px;
     height: 200px;
-    background-color: #CCC;
+    margin-bottom: 25px;
+    background: linear-gradient(to right, var(--cor-02), var(--cor-01));
 }
 
 #container-sides {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+#container-sides input {
+    padding: 5px;
+    margin-bottom: 7px;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+}
+
+#container-sides input:last-child {
+    margin-bottom: 0;
+}
+
+#reset-all {
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 70%;
+    border: none;
+    background-color: var(--cor-03);
+    color: var(--cor-05);
+}
+
+#copy-text-area {
+    margin-top: 10px;
+    padding: 5px;
+    width: 70%;
+    border: none;
+    background-color: var(--cor-02);
+    color: var(--cor-05);
 }
