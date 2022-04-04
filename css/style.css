@@ -122,4 +122,8 @@ textarea {
     #container-sides-reset {
         margin-top: 66px;
     }
+
+    #copy-text-area {
+        margin-bottom: 35px;
+    }
 }
