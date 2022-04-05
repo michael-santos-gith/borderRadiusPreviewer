@@ -108,11 +108,12 @@ textarea {
 
     #container-reset {
         flex-direction: row;
+        margin: 0px 55px;
     }
 
     #container-gerador {
         text-align: center;
-        margin-left: 35px;
+        margin-left: 60px;
     }
 
     #container h1 {
@@ -125,5 +126,25 @@ textarea {
 
     #copy-text-area {
         margin-bottom: 35px;
+    }
+}
+/* 768px */
+@media (min-width: 768px) {
+    #container {
+        margin-top: 100px;
+    }
+}
+/* 1024px */
+@media (min-width: 1024px) {
+    #container {
+        margin-top: 150px;
+    }
+
+    #container-reset {
+        margin: 0 65px;
+    }
+
+    #container-gerador {
+        margin-left: 90px;
     }
 }
