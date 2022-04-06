@@ -100,6 +100,14 @@ textarea {
     background-color: var(--cor-02);
     color: var(--cor-05);
 }
+
+#container-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 /* 529px */
 @media (min-width: 529px) {
     #container {
@@ -146,5 +154,42 @@ textarea {
 
     #container-gerador {
         margin-left: 90px;
+    }
+}
+/* 1440px */
+@media (min-width: 1440px) {
+    #container h1 {
+        font-size: 2.5em;
+        text-justify: auto;
+    }
+
+    #content-modify {
+        width: 300px;
+        height: 300px;
+    }
+
+    #container-sides-reset {
+        margin-top: 130px;
+    }
+
+    #container-sides input {
+        padding: 10px;
+    }
+
+    #reset-all {
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    #container-sides-reset {
+        margin-right: 52px;
+    }
+
+    textarea, #copy-text-area {
+        padding: 10px;
+    }
+
+    #copy-text-area {
+        font-size: 1.2em;
     }
 }
