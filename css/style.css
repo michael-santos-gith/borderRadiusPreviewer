@@ -173,12 +173,12 @@ textarea {
     }
 
     #container-sides input {
-        padding: 10px;
+        padding: 15px;
     }
 
     #reset-all {
-        padding: 10px;
-        font-size: 1.2em;
+        padding: 15px;
+        font-size: 1.4em;
     }
 
     #container-sides-reset {
@@ -186,10 +186,67 @@ textarea {
     }
 
     textarea, #copy-text-area {
-        padding: 10px;
+        padding: 15px;
+    }
+
+    textarea {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 18px;
     }
 
     #copy-text-area {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
+}
+/* 2560px */
+@media (min-width: 2560px) {
+    #container {
+        margin-top: 350px;
+    }
+
+    #container h1 {
+        font-size: 3.5em;
+    }
+
+    #content-modify {
+        width: 600px;
+        height: 600px;
+    }
+
+    #container-reset {
+        margin: 0 114px;
+    }
+
+    #container-gerador {
+        margin-left: 266px;
+    }
+
+    #container-sides input {
+        padding: 20px;
+    }
+
+    #reset-all {
+        padding: 20px;
+        font-size: 2.2em;
+    }
+
+    textarea, #copy-text-area {
+        padding: 20px;
+    }
+
+    textarea {
+        font-size: 40px;
+    }
+
+    input {
+        font-size: 30px;
+    }
+
+    #copy-text-area {
+        font-size: 2.2em;
+    }
+
 }
