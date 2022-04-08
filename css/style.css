@@ -116,7 +116,7 @@ textarea {
 
     #container-reset {
         flex-direction: row;
-        margin: 0px 55px;
+        max-width: 70%;
     }
 
     #container-gerador {
@@ -146,10 +146,6 @@ textarea {
 @media (min-width: 1024px) {
     #container {
         margin-top: 150px;
-    }
-
-    #container-reset {
-        margin: 0 65px;
     }
 
     #container-gerador {
@@ -214,10 +210,7 @@ textarea {
     #content-modify {
         width: 600px;
         height: 600px;
-    }
-
-    #container-reset {
-        margin: 0 114px;
+        margin-bottom: 50px;
     }
 
     #container-gerador {
@@ -230,7 +223,7 @@ textarea {
 
     #reset-all {
         padding: 20px;
-        font-size: 2.2em;
+        font-size: 3.2em;
     }
 
     textarea, #copy-text-area {
@@ -246,7 +239,7 @@ textarea {
     }
 
     #copy-text-area {
-        font-size: 2.2em;
+        font-size: 3.2em;
     }
 
 }
