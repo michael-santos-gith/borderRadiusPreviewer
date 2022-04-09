@@ -1,31 +1,25 @@
 let contentBeModificate = document.getElementById("content-modify");
-let leftUpSide = document.getElementById("left-up-side");
-let rightUpSide = document.getElementById("right-up-side");
-let rightDownSide = document.getElementById("right-down-side");
-let leftDownSide = document.getElementById("left-down-side");
+let inputFocuSelect = document.querySelectorAll('.input-click');
 let textAreaContent = document.getElementById('result-borders');
+let buttonCopyReset = document.querySelectorAll('.button-choose');
 let resetAll = document.getElementById('reset-all');
 let copyTextArea = document.getElementById('copy-text-area');
+
+function inputFocus(amount, indicator) {
+    inputFocuSelect[indicator].addEventListener('input', function() {
+        if (indicator == 0) {
+            contentBeModificate.style.borderTopLeftRadius = amount.value + 'px';
+        } else if (indicator == 1) {
+            contentBeModificate.style.borderTopRightRadius = amount.value + 'px';
+        } else if (indicator == 2) {
+            contentBeModificate.style.borderBottomRightRadius = amount.value + 'px';
+        } else {{
+            contentBeModificate.style.borderBottomLeftRadius = amount.value + 'px';
+        }}
+    });
+}
 // APLICA O BORDER-RADIUS 
-leftUpSide.addEventListener('input', function() {
-    contentBeModificate.style.borderTopLeftRadius = leftUpSide.value + 'px';
-    textAreaContent.value = `border-top-left-radius: ${leftUpSide.value}px;`;
-})
-
-rightUpSide.addEventListener('input', function() {
-    contentBeModificate.style.borderTopRightRadius = rightUpSide.value + 'px';
-    textAreaContent.value = `border-top-right-radius: ${rightUpSide.value}px;`;
-})
-
-rightDownSide.addEventListener('input', function() {
-    contentBeModificate.style.borderBottomRightRadius = rightDownSide.value + 'px';
-    textAreaContent.value = `border-bottom-right-radius: ${rightDownSide.value}px;`;
-})
-
-leftDownSide.addEventListener('input', function() {
-    contentBeModificate.style.borderBottomLeftRadius = leftDownSide.value + 'px';
-    textAreaContent.value = `border-bottom-left-radius: ${leftDownSide.value}px;`;
-})
+inputFocuSelect.forEach(inputFocus);
 
 resetAll.addEventListener('click', function() {
     leftUpSide.value = '';
